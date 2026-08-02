@@ -1,0 +1,38 @@
+# Vev Developer
+
+> Building no-code with code
+
+## Docs
+
+- [Webhook Integration](/webhook): The Vev webhook is the recommended approach for enterprise-level self-hosting. Instead of using embed scripts or ZIP downloads, the webhook delivers your project's HTML, CSS, and JavaScript directly to your server on every publish. This gives you full control over rendering, hosting, and caching — resulting in the best possible performance for SEO, LLMs, and page load times.
+- [Tracking and Analytics](/tracking): [Vev](https://vev.design) takes an agnostic approach to analytics and *does not* directly track visitors on Vev-created content or pages. However, we offer tools and methods to help you implement your preferred tracking solutions. This can be done through our [hosting integrations](https://www.vev.design/features/integrations/) or by using *event tracking* as described in this article.
+- [Components](/react/components): The `Image` component can be used with the `type: image` schema field.
+- [Hooks](/react/hooks): These hooks offer different way to interact with the Vev Editor.
+- [Children](/react/content-children): You can add content children in the [Design Editor](https://editor.vev.design/), using the <code>children</code> property in [Register Vev component](/react/register-vev-component).
+- [Editable CSS](/react/editable-css): All styles can be made editable in the [Design Editor](https://editor.vev.design/), using the <code>editableCSS</code> property in [Register Vev component](/react/register-vev-component).
+- [Interactions and Events](/react/interactions): Interaction and events facilitate dynamic communication among components, central to an event-driven architecture. This approach empowers components not only to respond to external events but also to broadcast their own, enabling other components to react accordingly. This provides you the capability to design intricate components that are both interactive and responsive to interactions from others.
+- [Recipes](/react/recipes): A collection of practical recipes showing how to build Vev components. Each recipe is focused and self-contained.
+- [Register Vev component](/react/register-vev-component): Install the React package into an existing React project:
+- [Props](/react/vev-props): Props are properties sent from the [Design Editor](https://editor.vev.design/) to your component(s).
+- [Types](/react/vev-types): Argument for functions <code>initialValue</code>
+and <code>hidden</code> in [Vev props](/react/vev-props)
+- [Client Rendering](/cms/client-side): For client-side rendering, we use the [Vev Embed](https://help.vev.design/en/articles/6141975-embed-your-project).
+Vev Embed provides a super lightweight and fast way to render a Vev project on the client side.
+- [How to Connect to a CMS](/cms): [Vev](https://editor.vev.design/) is a powerful front-end editor designed to seamlessly integrate with any CMS (Content Management System) or other data sources, enabling dynamic content display. It supports both [client side](/cms/client-side) and [server side](/cms/server-side) rendering, making it adaptable to any web application built with any programming language or framework.
+- [Server rendering](/cms/server-side): For server rendering, Vev is using [Mustache](https://mustache.github.io/), which is a generic templating language which can be used with a wide range of programming languages like PHP, Java, .NET and JavaScript.
+- [Getting started](/cli/getting-started): How to get started with [Vev](https://vev.design) using the command-line interface (CLI), and local development of
+custom [React components](https://reactjs.org/) in Vev.
+- [Web workers](/cli/web-workers): Web Workers allow you to run scripts in background threads, preventing heavy computations from blocking the main thread or interfering with rendering.
+[Learn more about Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API)
+- [Commands](/cli/commands): You will first need a Vev user, [sign up here](https://editor.vev.design/signup).
+- [Configuration](/cli/configuration): To configure your component package use the `vev.json` file. This file will contain the `key` for the component which connects your component package to Vev.
+- [Tailwind](/cli/tailwind): The Vev CLI natively supports [Tailwind CSS](https://tailwindcss.com/docs/installation), requiring minimal setup. Simply add a Tailwind configuration file to the root of your project.
+No extra configuration is necessary, as the `tailwindcss` package is already included.
+- [Using Secrets](/asset-source/api-keys): If you need to use credentials or other secrets like an API-key to connect to your asset repository use the `form` part
+of `registerVevComponent`:
+- [Asset Source](/asset-source/getting-started): An asset source is handled by the plugins system. You can add a plugin to extend Vev assets library and connect a DAM or other asset sources.
+- [Handler function](/asset-source/handler-function): The handler function retrieves information about your assets and return them in a format the Vev editor understands.
+The handler function returns an array of image or video assets.
+- [Custom Asset Sources](/asset-source): Custom asset sources enable you to integrate videos, images, and other media assets from your CMS, [Digital Asset Management (DAM)](https://en.wikipedia.org/wiki/Digital_asset_management)
+systems, or other media repositories into the Vev editor.
+- [Authorization](/api/auth): To authorize, you need to create a token.

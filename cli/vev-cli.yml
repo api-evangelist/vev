@@ -1,0 +1,35 @@
+generated: '2026-07-21'
+method: searched
+source: https://developer.vev.design/cli/getting-started + https://developer.vev.design/cli/commands
+name: Vev CLI
+binary: vev
+package: "@vev/cli"
+requires: Node.js v22 or higher
+docs: https://developer.vev.design/cli/getting-started
+install:
+- method: npm
+  command: npm install -g @vev/cli
+- method: yarn
+  command: yarn global add @vev/cli
+commands:
+- name: login
+  summary: Authorize the CLI against the Vev Design Editor and save an access token locally.
+  flags:
+  - name: --force
+    summary: Force a new login or log in to another account.
+- name: create
+  summary: Bootstrap a new React + TypeScript component project from the Vev boilerplate.
+  usage: vev create [my-project]
+- name: init
+  summary: Create a new component package in Vev (writes vev.json with the component key and a .vev build folder).
+- name: start
+  summary: Run components locally and connect the machine to the Design Editor for live development.
+  flags:
+  - name: --debug
+    summary: Print additional debug messages to stdout.
+- name: deploy
+  summary: Build one optimized JS/CSS bundle and deploy the component package so it is available in the Design Editor.
+key_flows:
+- Local development of custom React components with hot connection to the Design Editor via the green-dot bridge.
+- Deploying component packages to make widgets available across projects/accounts.
+- Tailwind CSS is natively supported (add a tailwind config; tailwindcss is bundled).

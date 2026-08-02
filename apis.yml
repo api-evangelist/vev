@@ -1,8 +1,29 @@
 aid: vev
 name: Vev
-description: 'Vev is a company surfaced as a portfolio company of eqt-ventures, point-nine and added to
-  the API Evangelist network as a stub for enrichment. Sector: design-tech. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Vev is a no-code web design and publishing platform for enterprise teams,
+  letting designers and marketers build interactive content, landing pages, and
+  high-performing marketing materials in a visual Design Editor (trusted by
+  brands like Experian and Pfizer). Its developer surface extends the platform
+  with code: a REST API at api.vev.design authenticated with an x-vev-key API
+  key, a publish webhook that delivers server-rendered HTML/CSS/JS to your own
+  host on every publish, a React component SDK (@vev/react + registerVevComponent)
+  for building custom drag-and-drop widgets, a CLI (@vev/cli) for local
+  development and deployment, and CMS integration via client-side or server-side
+  (Mustache) rendering.
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.vev.design/cdn-cgi/image/f=auto,q=82,h=628,w=1200,fit=crop/private/FExxUXqHHsQUqBgoOFYgE0rdnoq2/image/W78KT_O5Pd_2k5o5u.png
 url: https://raw.githubusercontent.com/api-evangelist/vev/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,16 +34,102 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Design Tech
-apis: []
+- No-Code
+- Web Design
+- CMS
+- Website Builder
+- Webhooks
+- React Components
+- Developer Tools
+apis:
+- name: Vev API
+  description: >-
+    The Vev REST API (api.vev.design) for API-key introspection and platform
+    integration, authenticated with an x-vev-key header. Complemented by a
+    publish webhook and a React component SDK/CLI toolchain.
+  humanURL: https://developer.vev.design/
+  baseURL: https://api.vev.design
+  tags:
+  - API
+  - No-Code
+  - Web Design
+  properties:
+  - type: Documentation
+    url: https://developer.vev.design/
+  - type: APIReference
+    url: https://developer.vev.design/api/auth
+  - type: Authentication
+    url: authentication/vev-authentication.yml
+  - type: Webhooks
+    url: asyncapi/vev-webhooks.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DeveloperPortal
+  url: https://developer.vev.design/
+- type: Documentation
+  url: https://developer.vev.design/
+- type: APIReference
+  url: https://developer.vev.design/api/auth
+- type: GettingStarted
+  url: https://developer.vev.design/cli/getting-started
+- type: Authentication
+  url: authentication/vev-authentication.yml
+- type: Webhooks
+  url: asyncapi/vev-webhooks.yml
+- type: LLMsTxt
+  url: llms/vev-llms.txt
+- type: Packages
+  url: packages/vev-packages.yml
+- type: SDKs
+  url: packages/vev-packages.yml
+- type: CLI
+  url: cli/vev-cli.yml
+- type: Components
+  url: components/vev-components.yml
+- type: WellKnown
+  url: well-known/vev-well-known.yml
+- type: SecurityTxt
+  url: well-known/vev-security.txt
+- type: VulnerabilityDisclosure
+  url: security/vev-vulnerability-disclosure.yml
+- type: Security
+  url: https://www.vev.design/security/responsible-disclosure-policy/
+- type: DomainSecurity
+  url: security/vev-domain-security.yml
+- type: TrustCenter
+  url: https://trust.vev.design/
+- type: StatusPage
+  url: https://status.vev.design/
+- type: GitHubOrganization
+  url: https://github.com/vev-design
+- type: Support
+  url: https://help.vev.design/
+- type: Blog
+  url: https://www.vev.design/blog/
+- type: Integrations
+  url: https://www.vev.design/features/integrations/
+- type: Pricing
+  url: https://www.vev.design/pricing/
+- type: SignUp
+  url: https://editor.vev.design/signup
+- type: Login
+  url: https://editor.vev.design/
+- type: TermsOfService
+  url: https://www.vev.design/terms-of-service/
+- type: PrivacyPolicy
+  url: https://www.vev.design/privacy-policy/
 - type: Website
   url: https://www.vev.design/
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 7
+  pass: local-v1

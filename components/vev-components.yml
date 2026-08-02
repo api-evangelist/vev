@@ -1,0 +1,48 @@
+generated: '2026-07-21'
+method: searched
+source: https://developer.vev.design/react/register-vev-component + https://developer.vev.design/react/components
+summary: Vev exposes a client-side React component model. Developers register custom
+  React components with registerVevComponent so they become drag-and-drop widgets
+  inside the Vev Design Editor, with editable props, editable CSS, content children,
+  and an interaction/event bus.
+loader_libraries:
+- name: "@vev/react"
+  url: https://www.npmjs.com/package/@vev/react
+  entry: registerVevComponent
+families:
+- name: Registration
+  items:
+  - name: registerVevComponent
+    docs: https://developer.vev.design/react/register-vev-component
+    summary: Register a React component (with name, props schema, editableCSS, children) as a Vev editor widget.
+- name: Built-in components
+  items:
+  - name: Image
+    docs: https://developer.vev.design/react/components
+    summary: "Component used with the `type: image` schema field."
+- name: Hooks
+  items:
+  - name: Vev hooks
+    docs: https://developer.vev.design/react/hooks
+    summary: Hooks to interact with the Vev Editor from within a component.
+- name: Props & types
+  items:
+  - name: Vev props
+    docs: https://developer.vev.design/react/vev-props
+    summary: Properties passed from the Design Editor into components.
+  - name: Vev types
+    docs: https://developer.vev.design/react/vev-types
+    summary: Argument types for schema fields (initialValue, hidden, etc.).
+- name: Content & styling
+  items:
+  - name: Editable CSS
+    docs: https://developer.vev.design/react/editable-css
+    summary: Expose component styles as editable in the Design Editor via editableCSS.
+  - name: Content children
+    docs: https://developer.vev.design/react/content-children
+    summary: Allow nested editor content through the children property.
+- name: Interactions
+  items:
+  - name: Interactions and events
+    docs: https://developer.vev.design/react/interactions
+    summary: Event-driven communication between components (emit/respond to events).

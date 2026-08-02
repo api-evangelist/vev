@@ -1,0 +1,9 @@
+# If you would like to report a security issue, you may report it to us according to this security.txt file.
+# This file is created according to security.txt standard 04.
+https://tools.ietf.org/html/draft-foudil-securitytxt-04
+
+# Contact address
+Contact: mailto:support+security@vev.design
+
+# Our responsible disclosure policy
+Policy: https://www.vev.design/security/responsible-disclosure-policy/

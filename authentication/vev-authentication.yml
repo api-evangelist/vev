@@ -1,0 +1,20 @@
+generated: '2026-07-21'
+method: searched
+source: https://developer.vev.design/api/auth
+docs: https://developer.vev.design/api/auth
+summary:
+  types: [apiKey]
+  api_key_in: [header]
+  oauth2_flows: []
+schemes:
+- name: vevApiKey
+  type: apiKey
+  in: header
+  parameter_name: x-vev-key
+  description: >-
+    API key created in the Vev Design Editor under user profile, scoped to the
+    relevant permissions. The key is valid forever until revoked. Sent as the
+    x-vev-key header on every request to https://api.vev.design.
+  scopes_note: API keys are created "with the relevant scope"; a documented scope reference was not found.
+  introspection_endpoint: https://api.vev.design/api-key/introspection
+  sources: [https://developer.vev.design/api/auth]

@@ -1,0 +1,37 @@
+generated: '2026-07-21'
+method: searched
+source: https://developer.vev.design/webhook
+spec_type: Webhooks
+summary: >-
+  Vev delivers a publish webhook: every time a project is published from the Vev
+  editor, Vev sends an HTTP POST to a configured destination endpoint containing
+  the project's fully rendered HTML, CSS, and JavaScript. It is the recommended
+  path for enterprise self-hosting (server-rendered HTML, full caching/hosting
+  control). Configured in the editor under Publishing > Add destination > Webhook.
+delivery:
+  transport: http
+  method: POST
+  trigger: project publish
+  endpoint: consumer-configured (must be publicly accessible)
+  authentication:
+  - none
+  - basic
+  - bearer
+events:
+- name: project.published
+  description: Fired on every publish; POSTs the complete page content to the destination endpoint.
+  payload:
+    description: >-
+      Full HTML documents (with html/head/body, styles, scripts) when "Send full
+      page" is enabled; body-only content otherwise. Options include plugin
+      settings, content-as-links (temporary download URLs for large pages),
+      asset URL rewriting for local hosting, custom assets folder, and og path
+      fixing.
+    options:
+    - Send full page
+    - Send plugin settings
+    - Content as links
+    - Include asset URLs
+    - Custom assets folder
+    - Fix og path
+docs: https://developer.vev.design/webhook
