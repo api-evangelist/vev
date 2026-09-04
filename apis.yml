@@ -24,15 +24,16 @@ deliveryModel:
   method: derived
 accessModel:
   pricing: unknown
-  onboarding: self-serve
+  onboarding: unknown
   trial: false
   try_now: false
   public: false
-  label: Self-serve signup
-  confidence: medium
+  label: Unknown
+  confidence: low
   source:
   - authentication
-  generated: '2026-07-22'
+  - security
+  generated: '2026-09-03'
   method: derived
 image: https://cdn.vev.design/cdn-cgi/image/f=auto,q=82,h=628,w=1200,fit=crop/private/FExxUXqHHsQUqBgoOFYgE0rdnoq2/image/W78KT_O5Pd_2k5o5u.png
 url: https://raw.githubusercontent.com/api-evangelist/vev/refs/heads/main/apis.yml
